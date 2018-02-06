@@ -1,0 +1,8 @@
+.headingBackground h1, .headingBackground h2 {
+	margin: 1em;
+	background: linear-gradient(to bottom,   #6097b5 0%, #87d5ff 50%, #39596b 55%, #4E7B94 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6097b5', endColorstr='#4E7B94',GradientType=0 ); /* IE6-9 */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
