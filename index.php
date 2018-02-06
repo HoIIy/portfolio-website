@@ -6,300 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hillary Borrino</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <!-- Optional Bootstrap theme -->
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/materialize.css">
-	<style type="text/css">
-		html, body {
-			height: 100%;
-		}
-		
-		body {
-			max-width: 100%;
-			overflow-x: hidden;
-		}
-		
-		.bg-transparent {
-			background: none;
-			background-color: transparent;
-		}
-		
-		nav {
-			background: transparent;
-			padding-left: 5em !important;
-			padding-top: 1em  !important;
-			font-size: 1.5em !important;
-		}
-		
-		nav a {
-			color: #fff;
-		}
-		
-		.darkNav a {
-			color: #000;
-		}
-		
-		.lightNav a {
-			color: #fff;
-		}
-		
-		nav a.disabled {
-			color: #4E7B94 !important;
-		}
-		
-		#bgImg {
-			background-image: url("img/bodybg2a.png");
-			position: fixed;
-		}
-		
-		#titleImg {
-			padding-right: 0em !important;
-		}
-		
-		#title_container {
-			padding: 0em !important;
-		}
-		
-		#pg_container {
-			height: 100%;
-		}
-		
-		.jarallax_background {
-			width: 100%;
-			height: 100%;
-			left: 50%;
-			background: url("img/bg4b.png");
-			display: block;
-			z-index: -1;
-			margin-top: 0px;
-			background-size: cover;
-			background-attachment: fixed;
-			-webkit-box-shadow: inset -7px 0 9px -5px rgba(0,0,0,0.35);
-			-moz-box-shadow:    inset -7px 0 9px -5px rgba(0,0,0,0.35);
-			box-shadow:         inset -7px 0 9px -5px rgba(0,0,0,0.35);
-			padding: 0em !important;
-		}
-		
-		#sidebar {
-			background-image: url("img/sbtex2.png");
-		}
-		
-		.portCircleBg {
-			border-radius: 7em;
-			background-color: #fff;
-			height: 200px;
-			width:  200px;
-			position: relative;
-		}
-		
-		.portCircleImg {
-			border-radius: 7em;
-			background-color: #fff;
-			height: 160px;
-			width:  160px;
-			background-image: url("img/me1.png");
-			background-size: cover;
-			position: absolute;
-			top: 20px;
-			left: 20px;
-		}
-		
-		.portMobile {
-			width: 140px;
-			height: 140px;
-		}
-		
-		.portMobile > * {
-			width: 100px;
-			height: 100px;
-		}
-		
-		#titleBtnContainer {
-			position: absolute; 
-			transform: translate(-50%, -50%); 
-			left: 50%; 
-			top: 50%;
-		}
-		
-		.greeting {
-			-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-			   -moz-animation: fadein 2s; /* Firefox < 16 */
-				-ms-animation: fadein 2s; /* Internet Explorer */
-				 -o-animation: fadein 2s; /* Opera < 12.1 */
-					animation: fadein 2s;
-		}
-		
-		.secondGreeting {
-			opacity: 0;
-			-webkit-animation: fadein 1s forwards; /* Safari, Chrome and Opera > 12.1 */
-			   -moz-animation: fadein 1s forwards; /* Firefox < 16 */
-				-ms-animation: fadein 1s forwards; /* Internet Explorer */
-				 -o-animation: fadein 1s forwards; /* Opera < 12.1 */
-					animation: fadein 1s forwards;
-
-			-webkit-animation-delay: 1s;
-			   -moz-animation-delay: 1s;
-			        animation-delay: 1s;
-		}
-		
-		.thirdGreeting {
-			-webkit-animation-delay: 1.75s;
-			   -moz-animation-delay: 1.75s;
-			        animation-delay: 1.75s;
-		}
-		
-		#pg_1 {
-			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100,ffffff+100&0+0,1+25,1+100 */
-			background: -moz-linear-gradient(top,    rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to bottom,   rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-		}
-		
-		#pg_2 {
-			background-color: #fff;
-		}
-		
-		#pg_last {
-			background-color: #333;
-		}
-		
-		#footerBottom {
-			position: absolute;
-			bottom: 1em;
-		}
-		
-	    .btn {
-			background: #e0e0e0;
-			background-image: -webkit-linear-gradient(top, #e0e0e0, #4E7B94);
-			background-image: -moz-linear-gradient(top, #e0e0e0, #4E7B94);
-			background-image: -ms-linear-gradient(top, #e0e0e0, #4E7B94);
-			background-image: -o-linear-gradient(top, #e0e0e0, #4E7B94);
-			background-image: linear-gradient(to bottom, #e0e0e0, #4E7B94);
-			-webkit-border-radius: 28;
-			-moz-border-radius: 28;
-			border-radius: 28px;
-			text-shadow: 1px 1px 3px #666666;
-			-webkit-box-shadow: 0px 1px 3px #333333;
-			-moz-box-shadow: 0px 1px 3px #333333;
-			box-shadow: 0px 1px 3px #333333;
-			color: #ffffff;
-			font-size: 31px;
-			padding: 10px 20px 10px 20px;
-			border: solid #fff 1px;
-			text-decoration: none;
-	    }
-
-		.btn:hover {
-			background: #7ab9cc;
-		}
-		
-		/** defines the fadein keyframes for different browsers **/
-		@keyframes fadein {
-			from { opacity: 0; }
-			to   { opacity: 1; }
-		}
-		@-moz-keyframes fadein {
-			from { opacity: 0; }
-			to   { opacity: 1; }
-		}
-		@-webkit-keyframes fadein {
-			from { opacity: 0; }
-			to   { opacity: 1; }
-		}
-		@-ms-keyframes fadein {
-			from { opacity: 0; }
-			to   { opacity: 1; }
-		}
-		@-o-keyframes fadein {
-			from { opacity: 0; }
-			to   { opacity: 1; }
-		}
-		
-		/** hides the desktop nav on non-desktop devices at the "lg" breakpoint **/
-		@media (max-width: 992px) {
-			#desktopNav {
-				display: none;
-			}
-		}
-		
-		/** Moves the portfolio and resume buttons up farther on small screens. **/
-		@media(max-width: 597px){
-			#titleBtnContainer {
-				top: 40%;
-			}
-		}
-		
-		/** resizes the portrait on mobile **/
-		@media(max-width: 420px){
-			.portMobile {
-				width:  70px;
-				height: 70px;
-			}
-			
-			.portMobile > * {
-				width:  50px;
-				height: 50px;
-			}
-			
-			.portCircleImg {
-				top:  10px;
-				left: 10px;
-			}
-		}
-		
-		/** 
-		    Removes excessive padding from jumbotrons at smaller screen sizes. 
-		    Formats the greeting in particular.
-		 **/
-		@media(max-width: 1050px){
-			.jumbotron {
-				padding: 1rem 2rem !important;
-			}
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 <div id="bgImg" class="h-100 w-100"></div>
 <div id="title_container" class="container-fluid h-100">
 	<div class="row h-100">
 		<div id="titleImg" class="col-12 col-lg-8">
-			<div class="jarallax_background container-fluid" data-0="background-position:0px 0px;" data-100000="background-position:0px -50000px;">
-				<div class="row d-lg-none p-3">	
-				    <div class="col-6">
-						<nav class="nav flex-column">
-							<div class="nav-item">
-								<a class="nav-link active" href="#">Home</a>
-							</div>
-							
-							<div class="nav-item">
-								<a class="nav-link active" href="#">About</a>
-							</div>
-							
-							<div class="nav-item">
-								<a class="nav-link" href="#">Skills</a>
-							</div>
-							
-							<div class="nav-item">
-								<a class="nav-link disabled" href="#">Contact</a>
-							</div>
-						</nav>
-					</div>
+			<div class="parallax_background container-fluid" data-0="background-position:0px 0px;" data-100000="background-position:0px -50000px;">
+				<div id="bgGradient">
 					
-					<div class="row col-6 justify-content-end">
-						<div class="portCircleBg portMobile z-depth-3">
-							<div class="portCircleImg portMobile z-depth-1">
-							</div>
-						</div>
-					</div>
-				</div>
+				<nav id="titleNav" class="navbar fixed-top navbar-expand-lg navbar-light pl-3" style="display: none;">
+				  <button class="navbar-toggler mr-auto custom-toggler" type="button"
+																	   data-toggle="collapse" 
+																	   data-target="#navbarNavDropdown" 
+																	   aria-controls="navbarNavDropdown" 
+																	   aria-expanded="false" 
+																	   aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav pl-3">
+					  <li class="nav-item px-3">
+						<a class="nav-link" href="#pg_container">About</a>
+					  </li>
+					  <li class="nav-item px-3">
+						<a class="nav-link" href="#">Skills</a>
+					  </li>
+					  <li class="nav-item px-3">
+						<a class="nav-link" href="#">Contact</a>
+					  </li>
+					</ul>
+				  </div>
+				</nav>
 				
-				<div id="titleBtnContainer" class="row justify-content-center">
-				    <div class="m-auto">
-						<div class="btn m-2">portfolio</div>
-					</div>
-					<div class="m-auto">
-						<div class="btn m-2">résumé</div>
+				<noscript>
+					<nav id="titleNav" class="navbar fixed-top navbar-expand-lg navbar-light pl-3">
+					  <button class="navbar-toggler mr-auto custom-toggler" type="button"
+																		   data-toggle="collapse" 
+																		   data-target="#navbarNavDropdown" 
+																		   aria-controls="navbarNavDropdown" 
+																		   aria-expanded="false" 
+																		   aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav pl-3">
+						  <li class="nav-item px-3">
+							<a class="nav-link" href="#pg_container">About</a>
+						  </li>
+						  <li class="nav-item px-3">
+							<a class="nav-link" href="#">Skills</a>
+						  </li>
+						  <li class="nav-item px-3">
+							<a class="nav-link" href="#">Contact</a>
+						  </li>
+						</ul>
+					  </div>
+					</nav>
+				</noscript>
+					
+					<div id="titleBtnContainer" class="row justify-content-center">
+						<div class="m-auto">
+							<div class="btn titleBtn m-2" style="display:none;">portfolio</div>
+						</div>
+						<div class="m-auto">
+							<div class="btn titleBtn m-2" style="display:none;">résumé</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -315,8 +89,119 @@
 				</div>
 				<div class="row col-12">
 					<div class="jumbotron bg-transparent">
-						<p  class="text-center greeting lead">Hello.</p>
-						<h1 class="text-center secondGreeting display-4">My name is Holly.</h1>
+						<p  class="text-center greeting lead">Hello!</p>
+						<h1 class="text-center secondGreeting display-4">My name is <span class="name">Holly</span>.</h1>
+						<hr class="my-4">
+						<div class="secondGreeting thirdGreeting">
+						<p>I'm a web developer with a background in design and interest in software development.</p>
+						<p>I strive to build responsive web applications that are functionally enjoyable to use and aesthetically artistic.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+<nav id="titleCoverNav" class="navbar fixed-top navbar-expand-lg navbar-light pl-3" style="display: none;">
+	<button class="navbar-toggler mr-auto custom-toggler" type="button"
+		data-toggle="collapse" 
+		data-target="#navbarCoverNavDropdown" 
+		aria-controls="navbarCoverNavDropdown" 
+		aria-expanded="false" 
+		aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarCoverNavDropdown">
+		<ul class="navbar-nav pl-3">
+			<li class="nav-item px-3">
+				<a class="nav-link" href="#pg_container">About</a>
+			</li>
+			<li class="nav-item px-3">
+				<a class="nav-link" href="#">Skills</a>
+			</li>
+			<li class="nav-item px-3">
+				<a class="nav-link" href="#">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<noscript><nav id="titleCoverNav" class="navbar fixed-top navbar-expand-lg navbar-light pl-3">
+	<button class="navbar-toggler mr-auto custom-toggler" type="button"
+		data-toggle="collapse" 
+		data-target="#navbarCoverNavDropdown" 
+		aria-controls="navbarCoverNavDropdown" 
+		aria-expanded="false" 
+		aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarCoverNavDropdown">
+		<ul class="navbar-nav pl-3">
+			<li class="nav-item px-3">
+				<a class="nav-link" href="#pg_container">About</a>
+			</li>
+			<li class="nav-item px-3">
+				<a class="nav-link" href="#">Skills</a>
+			</li>
+			<li class="nav-item px-3">
+				<a class="nav-link" href="#">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav></noscript>
+
+	<nav id="siteNav" class="navbar fixed-top navbar-expand-lg navbar-light pl-3 bg-light z-depth-2" style="display: none;">
+		<button class="navbar-toggler mr-auto custom-toggler" type="button"
+			data-toggle="collapse" 
+			data-target="#navbarSiteNavDropdown" 
+			aria-controls="navbarSiteNavDropdown" 
+			aria-expanded="false" 
+			aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="d-md-block d-lg-none ml-auto">
+			<div class="btn">portfolio</div>
+			<div class="btn">résumé</div>
+		</div>
+		
+		<div class="collapse navbar-collapse" id="navbarSiteNavDropdown">
+			<ul class="navbar-nav pl-3">
+				<li class="nav-item px-3">
+					<a class="nav-link" href="#pg_container">About</a>
+				</li>
+				<li class="nav-item px-3">
+					<a class="nav-link" href="#">Skills</a>
+				</li>
+				<li class="nav-item px-3">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="d-none d-lg-block ml-auto">
+			<div class="btn">portfolio</div>
+			<div class="btn">résumé</div>
+		</div>
+	</nav>
+
+<div id="pg_container" class="container-fluid">
+	<div class="row page">
+		<!-- show the intro at the top of the 'about' page on mobile. -->
+		<div class="container d-lg-none pt-3 mt-3">
+			<div class="row p-3 mt-3">
+				<div id="mobilePortContainer" class="col-12 col-sm-4 py-3 my-3">
+					<div class="portCircleBg portMobile z-depth-3 m-auto">
+						<div class="portCircleImg portMobile z-depth-1">
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-8">
+					<div class="jumbotron bg-transparent">
+						<p  class="text-center greeting lead">Hello!</p>
+						<h1 class="text-center secondGreeting display-4">My name is <span class="name">Holly</span>.</h1>
 						<hr class="my-4">
 						<div class="secondGreeting thirdGreeting">
 						<p>I'm a web developer with a background in design and interest in software development.</p>
@@ -326,44 +211,70 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	
+		<!-- 'about' page content -->
+		<div id="pg_1" class="col-12">
+			<div class="container">
+			    <div class="row">
+					<div class="mx-auto">
+						<div class="headingBackground pl-sm-0 pl-md-3 ml-sm-0 ml-md-3">
+							<h2 data-text="About Me">About Me</h1>
+						</div>
+					</div>
+				</div>
+				<p class="text-muted">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod id odio ut condimentum. Phasellus diam dolor, malesuada ut pretium sit amet, finibus ut ante. Cras in luctus tellus. Sed euismod, turpis sit amet eleifend aliquet, eros lectus tincidunt erat, non egestas quam velit auctor nulla. Donec quis vulputate dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer euismod sapien vel magna condimentum ultricies. Phasellus sit amet varius quam. Donec non faucibus mauris, et ultrices lorem.
 
-<nav id="desktopNav" class="nav fixed-top">
-	<div class="nav-item">
-		<a class="nav-link active" href="#">Home</a>
-	</div>
-	
-	<div class="nav-item">
-		<a class="nav-link active" href="#">About</a>
-	</div>
-	
-	<div class="nav-item">
-		<a class="nav-link" href="#">Skills</a>
-	</div>
-	
-	<div class="nav-item">
-		<a class="nav-link disabled" href="#">Contact</a>
-	</div>
-</nav>
+	Vivamus bibendum, erat ut consectetur posuere, metus augue dignissim magna, non euismod lectus dolor a leo. Curabitur a metus at elit dignissim lobortis eu eget ante. Vivamus et quam tortor. Cras elementum semper velit eu facilisis. Nulla volutpat volutpat tortor, et aliquam velit pretium vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum nisi at lectus imperdiet, sed sagittis tortor laoreet. Etiam laoreet, lorem quis bibendum ultrices, orci ex congue ligula, ut dapibus lorem tellus non leo. Vivamus nec hendrerit orci. Ut placerat posuere tortor, sed aliquet elit malesuada non. Etiam fermentum neque diam, a ullamcorper turpis congue ac. Praesent eu eleifend leo, vitae dictum velit. Vestibulum lacus leo, tincidunt at tincidunt vitae, ultrices eu turpis. Aliquam a mauris sapien. Phasellus venenatis sem a elementum lacinia. Maecenas at iaculis est.
+				</p>
+				
+			    <div class="row page">
+					<div class="mx-auto">
+						<div class="headingBackground pl-sm-0 pl-md-3 ml-sm-0 ml-md-3">
+							<h2 data-text="Goals">Goals</h1>
+						</div>
+					</div>
+				</div>
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod id odio ut condimentum. Phasellus diam dolor, malesuada ut pretium sit amet, finibus ut ante. Cras in luctus tellus. Sed euismod, turpis sit amet eleifend aliquet, eros lectus tincidunt erat, non egestas quam velit auctor nulla. Donec quis vulputate dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer euismod sapien vel magna condimentum ultricies. Phasellus sit amet varius quam. Donec non faucibus mauris, et ultrices lorem.
 
-<div id="pg_container" class="container-fluid h-100">
-	<div class="row h-100">
-		<div id="pg_1" class="page col-12">
-			<p>about</p>
-			<p>goals</p>
+	Vivamus bibendum, erat ut consectetur posuere, metus augue dignissim magna, non euismod lectus dolor a leo. Curabitur a metus at elit dignissim lobortis eu eget ante. Vivamus et quam tortor. Cras elementum semper velit eu facilisis. Nulla volutpat volutpat tortor, et aliquam velit pretium vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum nisi at lectus imperdiet, sed sagittis tortor laoreet. Etiam laoreet, lorem quis bibendum ultrices, orci ex congue ligula, ut dapibus lorem tellus non leo. Vivamus nec hendrerit orci. Ut placerat posuere tortor, sed aliquet elit malesuada non. Etiam fermentum neque diam, a ullamcorper turpis congue ac. Praesent eu eleifend leo, vitae dictum velit. Vestibulum lacus leo, tincidunt at tincidunt vitae, ultrices eu turpis. Aliquam a mauris sapien. Phasellus venenatis sem a elementum lacinia. Maecenas at iaculis est.
+				</p>
+			</div>
 		</div>
 	</div>
 	
-	<div class="row h-100">
-		<div id="pg_2" class="page col-12">
-			skills
+	<div class="row page">
+		<div id="pg_2" class="col-12">
+			<div class="row">
+				<div class="mx-auto">
+					<div class="headingBackground pl-sm-0 pl-md-3 ml-sm-0 ml-md-3">
+						<h1 data-text="Skills">Skills</h1>
+					</div>
+				</div>
+			</div>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod id odio ut condimentum. Phasellus diam dolor, malesuada ut pretium sit amet, finibus ut ante. Cras in luctus tellus. Sed euismod, turpis sit amet eleifend aliquet, eros lectus tincidunt erat, non egestas quam velit auctor nulla. Donec quis vulputate dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer euismod sapien vel magna condimentum ultricies. Phasellus sit amet varius quam. Donec non faucibus mauris, et ultrices lorem.
+
+Vivamus bibendum, erat ut consectetur posuere, metus augue dignissim magna, non euismod lectus dolor a leo. Curabitur a metus at elit dignissim lobortis eu eget ante. Vivamus et quam tortor. Cras elementum semper velit eu facilisis. Nulla volutpat volutpat tortor, et aliquam velit pretium vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum nisi at lectus imperdiet, sed sagittis tortor laoreet. Etiam laoreet, lorem quis bibendum ultrices, orci ex congue ligula, ut dapibus lorem tellus non leo. Vivamus nec hendrerit orci. Ut placerat posuere tortor, sed aliquet elit malesuada non. Etiam fermentum neque diam, a ullamcorper turpis congue ac. Praesent eu eleifend leo, vitae dictum velit. Vestibulum lacus leo, tincidunt at tincidunt vitae, ultrices eu turpis. Aliquam a mauris sapien. Phasellus venenatis sem a elementum lacinia. Maecenas at iaculis est.
+			</p>
 		</div>
 	</div>
 	
-	<div class="row h-100">
-		<div id="pg_2" class="page col-12">
-			contact me
+	<div class="row page">
+		<div id="pg_2" class="col-12">
+			<div class="row">
+				<div class="mx-auto">
+					<div class="headingBackground pl-sm-0 pl-md-3 ml-sm-0 ml-md-3">
+						<h1 data-text="Contact Me">Contact Me</h1>
+					</div>
+				</div>
+			</div>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod id odio ut condimentum. Phasellus diam dolor, malesuada ut pretium sit amet, finibus ut ante. Cras in luctus tellus. Sed euismod, turpis sit amet eleifend aliquet, eros lectus tincidunt erat, non egestas quam velit auctor nulla. Donec quis vulputate dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer euismod sapien vel magna condimentum ultricies. Phasellus sit amet varius quam. Donec non faucibus mauris, et ultrices lorem.
+
+Vivamus bibendum, erat ut consectetur posuere, metus augue dignissim magna, non euismod lectus dolor a leo. Curabitur a metus at elit dignissim lobortis eu eget ante. Vivamus et quam tortor. Cras elementum semper velit eu facilisis. Nulla volutpat volutpat tortor, et aliquam velit pretium vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum nisi at lectus imperdiet, sed sagittis tortor laoreet. Etiam laoreet, lorem quis bibendum ultrices, orci ex congue ligula, ut dapibus lorem tellus non leo. Vivamus nec hendrerit orci. Ut placerat posuere tortor, sed aliquet elit malesuada non. Etiam fermentum neque diam, a ullamcorper turpis congue ac. Praesent eu eleifend leo, vitae dictum velit. Vestibulum lacus leo, tincidunt at tincidunt vitae, ultrices eu turpis. Aliquam a mauris sapien. Phasellus venenatis sem a elementum lacinia. Maecenas at iaculis est.
+			</p>
 		</div>
 	</div>
 	
@@ -388,6 +299,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 
 	<script type="text/javascript">
 	
@@ -396,34 +308,66 @@
 		forceHeight: false
 	});
 	
-	// fade on scroll
-	$(window).scroll(function() { 
-		// Get scroll position
-		var s = $(window).scrollTop(),
-		// scroll value and opacity
-		opacityVal = (s / 240)/2;
-		// opacity value 0% to 100%
-		$('.jarallax_background').css('-webkit-filter', 'blur('+opacityVal+'em)');
-		$('.jarallax_background').css('filter', 'blur('+opacityVal+'em)');
-	});
+	/**
+	 * detect IE
+	 * returns version of IE or false, if browser is not Internet Explorer
+	 */
+	function isIE() {
+		var userAgent = window.navigator.userAgent;
+		var msie    = userAgent.indexOf('MSIE '); // IE<=10
+		var trident = userAgent.indexOf('Trident/'); // IE11
+		var edge    = userAgent.indexOf('Edge/'); // IE12+
+		if (msie > 0 || trident > 0 || edge > 0) {
+			return true;
+		}
+		return false;
+	}
 	
 	$(document).ready(function(){
-		$(window).scroll(function(){
-		var light_pos = $('#title_container').offset().top;
-		var light_height = $('#title_container').height();
-		var menu_pos = $('#desktopNav').offset().top;
-		var scroll = $(window).scrollTop();
+		$('#titleNav').slideDown(500);
+		$('#titleCoverNav').slideDown(500);
+		$('.titleBtn').show("fade", null, 1000);
+		
+		/** Make sure to show the site nav on refresh of non-title pages **/
+		if ($('#titleNav').offset().top > $('#title_container').height()) {
+			$("#siteNav").show();
+		}
+		
+		/** Scroll effects: blur title image + toggle navs **/
+		$(window).scroll(function() {
+			var scrollPos = $(window).scrollTop();
+			var opacityVal = (scrollPos / 240)/2; // opacity value 0% to 50%
+			$('.parallax_background').css('-webkit-filter', 'blur('+opacityVal+'em)');
+			$('.parallax_background').css('filter', 'blur('+opacityVal+'em)');
+	
+			var light_pos    = $('#title_container').offset().top;
+			var light_height = $('#title_container').height();
+			var menu_pos     = $('#titleNav').offset().top;
+			
+			// if we're anywhere besides the title page 
+			// and not doing so already, show the low-opacity (light) title nav
+			if (scrollPos > 0 && document.getElementById("titleCoverNav").style.display == "none") {
+				document.getElementById("titleCoverNav").style.display = block;
+			}
 
-		if(menu_pos < (light_pos + light_height)) {
-			$('#desktopNav').addClass('lightNav');
-		    $('#desktopNav').removeClass('darkNav');
+			// if we're on the title page, show the title nav
+			if(menu_pos < (light_pos + light_height)) {
+				$("#siteNav").hide("fold", null, 1000);
+			}
+			else {
+				// otherwise, show the global site nav (dark version)
+				$("#siteNav").show("drop", null, 500);
+			}
+        }); // end window scroll
+		
+		if (isIE()){
+			$("<link/>", {
+				rel: "stylesheet",
+				type: "text/css",
+				href: "css/ie.css"
+			}).appendTo("head");
 		}
-		else {
-			$('#desktopNav').removeClass('lightNav');
-		    $('#desktopNav').addClass('darkNav');
-		}
-	  })
-	})
+	}); // end document get ready
 	
 	</script>
 </body>
