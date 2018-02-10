@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
 <!-- 
@@ -20,7 +21,7 @@
   </div>
 </noscript>
 <div id="bgImg" class="h-100 w-100"></div>
-  <div id="title_container" class="container-fluid h-100">
+  <div id="titleContainer" class="container-fluid h-100">
     <div class="row h-100">
       <div id="titleImg" class="col-12 col-lg-8">
         <div class="parallax_background container-fluid" data-0="background-position:0px 0px;" data-100000="background-position:0px -50000px;">
@@ -49,7 +50,7 @@
                     <a class="nav-link" href="#pg_contactMe">Contact</a>
                   </li>
                   <li class="nav-item px-3">
-                    <a class="nav-link" href="#">Credits</a>
+                    <a class="nav-link" href="#pg_last">Credits</a>
                   </li>
                 </ul>
               </div>
@@ -80,7 +81,7 @@
                       <a class="nav-link" href="#pg_contactMe">Contact</a>
                     </li>
                     <li class="nav-item px-3">
-                      <a class="nav-link" href="#">Credits</a>
+                      <a class="nav-link" href="#pg_last">Credits</a>
                     </li>
                   </ul>
                 </div>
@@ -99,17 +100,17 @@
 				<noscript>
 				<div class="row">
 				  <div class="col-6">
-				  <div class="m-auto">
-					<div class="btn titleBtn m-2">portfolio</div>
-				  </div>
+				    <div class="m-auto">
+					  <div class="btn titleBtn m-2">portfolio</div>
+				    </div>
 				  </div>
 				  <div class="col-6">
-				  <div class="m-auto">
-					<div class="btn titleBtn m-2">résumé</div>
+			  	    <div class="m-auto">
+				 	  <div class="btn titleBtn m-2">résumé</div>
+				    </div>
 				  </div>
-				  </div>
-				  </div>
-				</noscript>
+				</div>
+		      </noscript>
             </div>
           </div>
         </div>
@@ -163,7 +164,7 @@
           <a class="nav-link" href="#pg_contactMe">Contact</a>
         </li>
         <li class="nav-item px-3">
-          <a class="nav-link" href="#">Credits</a>
+          <a class="nav-link" href="#pg_last">Credits</a>
         </li>
       </ul>
     </div>
@@ -194,7 +195,7 @@
             <a class="nav-link" href="#pg_contactMe">Contact</a>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link" href="#">Credits</a>
+            <a class="nav-link" href="#pg_last">Credits</a>
           </li>
         </ul>
       </div>
@@ -230,7 +231,7 @@
           <a class="nav-link" href="#pg_contactMe">Contact</a>
         </li>
         <li class="nav-item px-3">
-          <a class="nav-link" href="#">Credits</a>
+          <a class="nav-link" href="#pg_last">Credits</a>
         </li>
       </ul>
     </div>
@@ -238,6 +239,9 @@
       <div class="btn">portfolio</div>
       <div class="btn">résumé</div>
     </div>
+	<div class="d-none d-lg-block ml-3">
+	  <a href="#titleContainer"><h6 class="text-muted"><small id="buttonUp">Back To Top<i class="fas fa-angle-double-up ml-3"></i></small></h6></a>
+	</div>
   </nav>
 
   <div id="pg_container" class="container-fluid py-3">
@@ -406,13 +410,24 @@
     return false;
   }
   
+  /* 
+      Credit to Joseph Silber: https://stackoverflow.com/a/7717572/1624318 
+	  Smoother scrolling to anchor links.
+   */
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 700);
+  });
+  
   $(document).ready(function(){
     $('#titleNav').slideDown(500);
     $('#titleCoverNav').slideDown(500);
     $('.titleBtn').show("fade", null, 1000);
     
     /** Make sure to show the site nav on refresh of non-title pages **/
-    if ($('#titleNav').offset().top > $('#title_container').height()) {
+    if ($('#titleNav').offset().top > $('#titleContainer').height()) {
       $("#siteNav").show();
     }
     
@@ -423,8 +438,8 @@
       $('.parallax_background').css('-webkit-filter', 'blur('+opacityVal+'em)');
       $('.parallax_background').css('filter', 'blur('+opacityVal+'em)');
   
-      var light_pos    = $('#title_container').offset().top;
-      var light_height = $('#title_container').height();
+      var light_pos    = $('#titleContainer').offset().top;
+      var light_height = $('#titleContainer').height();
       var menu_pos     = $('#titleNav').offset().top;
       
       // if we're anywhere besides the title page 

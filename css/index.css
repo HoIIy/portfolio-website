@@ -19,11 +19,6 @@
 			min-height: 100%;
 		}
 		
-		#navbarSiteNavDropdown {
-			background-color: #C5D4DC;
-			margin-top: 0.5em;
-		}
-		
 		#enableJS {
 			position: fixed;
 			top: 0;
@@ -33,15 +28,15 @@
 			background-color: rgba(0,0,0,0.85);
 			color: #FF0000;
 			z-index: 60000;
-			-webkit-animation: fadeout 3s forwards; /* Safari, Chrome and Opera > 12.1 */
-			   -moz-animation: fadeout 3s forwards; /* Firefox < 16 */
-				-ms-animation: fadeout 3s forwards; /* Internet Explorer */
-				 -o-animation: fadeout 3s forwards; /* Opera < 12.1 */
-					animation: fadeout 3s forwards;
+			-webkit-animation: fadeout 1s forwards; /* Safari, Chrome and Opera > 12.1 */
+			   -moz-animation: fadeout 1s forwards; /* Firefox < 16 */
+				-ms-animation: fadeout 1s forwards; /* Internet Explorer */
+				 -o-animation: fadeout 1s forwards; /* Opera < 12.1 */
+					animation: fadeout 1s forwards;
 
-			-webkit-animation-delay: 0.5s;
-			   -moz-animation-delay: 0.5s;
-			        animation-delay: 0.5s;
+			-webkit-animation-delay: 1s;
+			   -moz-animation-delay: 1s;
+			        animation-delay: 1s;
 					
 			display: flex;
 			align-items: center;
@@ -160,6 +155,7 @@
 		
 		#titleImg {
 			padding-right: 0em !important;
+			padding-left:  0em !important;
 		}
 		
 		#title_container {
@@ -196,17 +192,6 @@
 		.headingBackground h1 {
 			font-size: 4rem;
 		}
-
-		@media(min-width: 400px) {
-			.headingBackground h2, .headingBackground h1 {
-				font-size: 2.5rem;
-			}
-		}
-		@media(max-width: 399px) {
-			.headingBackground h2, .headingBackground h1 {
-				font-size: 2rem;
-			}
-		}	
 		
 		/** Hides behind the header text as a pseudo-shadow. **/
 		.headingBackground h1:after, .headingBackground h2:after {
@@ -229,8 +214,8 @@
 			background-size: cover;
 			background-attachment: fixed;
 			-webkit-box-shadow: inset -7px 0 9px -5px rgba(0,0,0,0.35);
-			   -moz-box-shadow:    inset -7px 0 9px -5px rgba(0,0,0,0.35);
-			        box-shadow:         inset -7px 0 9px -5px rgba(0,0,0,0.35);
+			-moz-box-shadow:    inset -7px 0 9px -5px rgba(0,0,0,0.35);
+			box-shadow:         inset -7px 0 9px -5px rgba(0,0,0,0.35);
 			padding: 0em !important;
 		}
 		
@@ -377,6 +362,11 @@
 			padding: 10px 20px 10px 20px;
 		}
 		
+		h6 a {
+			color: #BFC8CC;
+			text-decoration: none !important;
+		}
+		
 		/** defines the fadein keyframes for different browsers **/
 		@keyframes fadein {
 			from { opacity: 0; }
@@ -401,24 +391,24 @@
 		
 		/** defines the fadeout keyframes for different browsers **/
 		@keyframes fadeout {
-			from { opacity: 1; z-index: 6000; }
-			to   { opacity: 0; z-index: -6000; }
+			from { opacity: 1; }
+			to   { opacity: 0; }
 		}
 		@-moz-keyframes fadeout {
-			from { opacity: 1; z-index: 6000; }
-			to   { opacity: 0; z-index: -6000; }
+			from { opacity: 1; }
+			to   { opacity: 0; }
 		}
 		@-webkit-keyframes fadeout {
-			from { opacity: 1; z-index: 6000; }
-			to   { opacity: 0; z-index: -6000; }
+			from { opacity: 1; }
+			to   { opacity: 0; }
 		}
 		@-ms-keyframes fadeout {
-			from { opacity: 1; z-index: 6000; }
-			to   { opacity: 0; z-index: -6000; }
+			from { opacity: 1; }
+			to   { opacity: 0; }
 		}
 		@-o-keyframes fadeout {
-			from { opacity: 1; z-index: 6000; }
-			to   { opacity: 0; z-index: -6000; }
+			from { opacity: 1; }
+			to   { opacity: 0; }
 		}
 		
 		/** Less navbar padding on mobile. **/
@@ -453,5 +443,27 @@
 		@media(max-width: 1250px){
 			.jumbotron {
 				padding: 0rem 0rem !important;
+			}
+		}
+		
+		
+		@media(min-width: 769px){
+			.headingBackground h2, .headingBackground h1 {
+				font-size: 4rem;
+			}
+		}
+		@media(min-width: 576px) and (max-width: 768px) {
+			.headingBackground h2, .headingBackground h1 {
+				font-size: 3rem;
+			}
+		}
+		@media(min-width: 420px) and (max-width: 575px) {
+			.headingBackground h2, .headingBackground h1 {
+				font-size: 2.5rem;
+			}
+		}
+		@media(max-width: 419px) {
+			.headingBackground h2, .headingBackground h1 {
+				font-size: 2rem;
 			}
 		}
