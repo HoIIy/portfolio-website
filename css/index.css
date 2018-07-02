@@ -1,7 +1,184 @@
+/**
+    Global config. 
+    Styles that're applied to the entire site or multiple components.
+**/
 html, body {
 	height: 100%;
 }
 
 body {
-    background: url("../img/bodybg2a.png") center fixed rgb(183,210,231);
+    background: url("../img/bg.png") center fixed rgb(183,210,231);
+}
+
+.page {
+	min-height: 100%;
+	min-height: 100vh;
+}
+
+/** defines the fadein keyframes for different browsers **/
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/** defines the fadeout keyframes for different browsers **/
+@keyframes fadeout {
+	from { opacity: 1; }
+	to   { opacity: 0; }
+}
+@-moz-keyframes fadeout {
+	from { opacity: 1; }
+	to   { opacity: 0; }
+}
+@-webkit-keyframes fadeout {
+	from { opacity: 1; }
+	to   { opacity: 0; }
+}
+@-ms-keyframes fadeout {
+	from { opacity: 1; }
+	to   { opacity: 0; }
+}
+@-o-keyframes fadeout {
+	from { opacity: 1; }
+	to   { opacity: 0; }
+}
+
+/** global aesthetic effects **/
+.blu_vert_overlay {
+	/** http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+0,0+100 **/
+	background: -moz-linear-gradient(top, rgba(50,80,130,0.25) 0%, rgba(50,80,130,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(50,80,130,0.25) 0%,rgba(50,80,130,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(50,80,130,0.25) 0%,rgba(50,80,130,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    height: 100%;
+}
+
+.blur {
+    -webkit-filter: blur(0.35rem);
+       -moz-filter: blur(0.35rem);
+         -o-filter: blur(0.35rem);
+        -ms-filter: blur(0.35rem);
+            filter: blur(0.35rem);
+		  
+        transition: 0.75s filter linear;
+    -webkit-transition: 0.75s -webkit-filter linear;
+       -moz-transition: 0.75s -moz-filter linear;
+        -ms-transition: 0.75s -ms-filter linear;
+         -o-transition: 0.75s -o-filter linear;
+	 
+    transition-timing-function: ease-in-out;
+}
+
+/** 
+    From Google's Material Design:
+ **/
+.z-depth-3 {
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+/** 
+    Component config.
+    Groups of styles for singleton elements.
+	Elements are organized in order of appearance in HTML.
+ **/
+#loading {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 99;
+	text-align: center;
+}
+
+#loading_img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -110px 0 0 -110px;
+	height: 220px;
+	width: 220px;
+	z-index: 100;
+}
+
+#title_img {
+	background: url("../img/title_pic.jpg");
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+    -webkit-box-shadow: inset -7px 0 9px -5px rgba(0,0,0,0.35);
+       -moz-box-shadow: inset -7px 0 9px -5px rgba(0,0,0,0.35);
+			box-shadow: inset -7px 0 9px -5px rgba(0,0,0,0.35);
+}
+
+#sidebar {
+	background: url("../img/sidebar_texture.png") top left / cover;
+}
+
+.portCircleBg {
+	border-radius: 7em;
+	background-color: #fff;
+	position: relative;
+	height: 200px;
+	width:  200px;
+}
+
+.portCircleImg {
+	border-radius: 7em;
+	background: url("../img/portrait.png") center / cover #fff;
+	height: 160px;
+	width:  160px;
+	position: absolute;
+	top:  20px;
+	left: 20px;
+}
+
+.name {
+	color: #fff;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	text-transform: uppercase;
+}
+
+/** Animations rely on global keyframe definitions. **/
+.greeting {
+	opacity: 0;
+}
+
+.greeting:nth-child(1) {
+}
+
+.greeting:nth-child(2) {
+	-webkit-animation: fadein 1s forwards; /* Safari, Chrome and Opera > 12.1 */
+	   -moz-animation: fadein 1s forwards; /* Firefox < 16 */
+		-ms-animation: fadein 1s forwards; /* Internet Explorer */
+		 -o-animation: fadein 1s forwards; /* Opera < 12.1 */
+			animation: fadein 1s forwards;
+
+	-webkit-animation-delay: 1s;
+	   -moz-animation-delay: 1s;
+}
+
+/** 3rd child is the horizontal rule in the sidebar - don't fade in **/
+
+.greeting:nth-child(4) {
 }
