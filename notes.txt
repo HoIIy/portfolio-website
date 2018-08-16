@@ -19,3 +19,5 @@ Plans:
 -------------------------
 
 Credits:
+
+http://ianlunn.github.io/Hover/ - logo hover effect

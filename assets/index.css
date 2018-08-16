@@ -49,13 +49,27 @@ header > .z-depth-3 {
 	z-index: 100;
 }
 
-#logo {
-	font-size: 8em;
-	color: #fff;
-	text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+#logo {		 
 	position: absolute;
 	top: 0.25em;
 	left: 0.5em;
+	letter-spacing: -0.2em;
+	font-size: 8em;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0px 0px 10px rgba(255,255,255,0.5), 
+	             0px 0px 10px rgba(255,255,255,0.1), 
+	             0px 0px 5px rgba(255,255,255,0.4);
+}
+
+#soc_med {
+	float: right;
+	text-align: center;
+	background-color: #333;
+	border-left: 1px solid #000;
 }
 
 #scene {
@@ -181,6 +195,15 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 		font-weight: 800;
 		font-family: 'Roboto', sans-serif;
 	}
+	
+	#soc_med {
+		width: 58px;
+	}
+
+	#soc_med img {
+		height: 55px;
+		width: auto;
+	}
 }
 
 @media (max-width: 768px) {
@@ -200,6 +223,15 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 	nav li a:link, nav li a:visited {
 		padding: 0.5rem 0 0.5rem 0;
 		font-size: 0.8rem;
+	}
+	
+	#soc_med {
+		width: 35px;
+	}
+
+	#soc_med img {
+		height: 35px;
+		width: auto;
 	}
 }
 
@@ -246,5 +278,11 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 @media (min-width: 1250px) {
 	nav li a:link, nav li a:visited {
 		font-size: 2rem;
+	}
+	
+	#logo {
+		font-size: 10em;
+		top: 0.05em;
+		text-shadow: 0px 0px 10px rgba(0,0,0,0.1), 0px 0px 5px rgba(0,0,0,0.4);
 	}
 }
