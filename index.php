@@ -17,7 +17,7 @@
   
   <header>
     <div class="z-depth-3">  
-		<div id="logo_bar">
+		<div id="logo_bar" class="light_theme">
 		  <div id="logo">[logo]</div>
 		  <div id="bar_buttons">[sun] [moon] [rainbow]</div>
 		</div>

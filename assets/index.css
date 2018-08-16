@@ -14,8 +14,8 @@ body {
     font: bold 12px Arial, Helvetica, Clean, sans-serif;
 	text-align: right;
 	
-	    background: linear-gradient(rgb(232, 232, 232) 0%, rgb(255, 255, 255) 50%, rgb(242, 242, 242) 50%, rgb(196, 196, 196) 100%);
-    border-bottom: 1px solid rgb(204, 204, 204);
+	/*    background: linear-gradient(rgb(232, 232, 232) 0%, rgb(255, 255, 255) 50%, rgb(242, 242, 242) 50%, rgb(196, 196, 196) 100%);
+    border-bottom: 1px solid rgb(204, 204, 204);*/
 }
 
 #logo {
