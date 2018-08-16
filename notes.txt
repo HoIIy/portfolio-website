@@ -15,9 +15,17 @@ Plans:
 
 -- going to make input boxes oval and white, with no borde but material-design-esque diffuse shadows
 
+To add in the portfolio section:
+
+			<img src="assets/sm_icons/hackernews.png"></img>
+			<img src="assets/sm_icons/github.png"></img>
+			<img src="assets/sm_icons/deviantart.png"></img>
+			<img src="assets/sm_icons/slack.png"></img>
+			<img src="assets/sm_icons/trello.png"></img>
 
 -------------------------
 
 Credits:
 
-http://ianlunn.github.io/Hover/ - logo hover effect
+http://ianlunn.github.io/Hover/      - logo hover effect
+http://www.socicon.com/generator.php - social media icons
