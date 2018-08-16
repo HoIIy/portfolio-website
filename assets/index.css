@@ -1,0 +1,159 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-size: 100%;
+    text-decoration: none;
+}
+
+#logo_bar {
+	padding: 1.5rem 3rem;
+    font: bold 12px Arial, Helvetica, Clean, sans-serif;
+	text-align: right;
+	
+	    background: linear-gradient(rgb(232, 232, 232) 0%, rgb(255, 255, 255) 50%, rgb(242, 242, 242) 50%, rgb(196, 196, 196) 100%);
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+#logo {
+	float: left;
+}
+
+#logo:after {
+	clear: both;
+}
+
+#bar_buttons {
+	display: inline-block;
+	word-spacing: 1rem;
+}
+
+.color_gradient {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0080ff+0,7bff00+100 */
+	background: #0080ff; /* Old browsers */
+	background: -moz-linear-gradient(top, #0080ff 0%, #7bff00 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #0080ff 0%,#7bff00 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #0080ff 0%,#7bff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0080ff', endColorstr='#7bff00',GradientType=0 ); /* IE6-9 */
+}
+
+header > div {
+	position: relative;
+}
+
+header > .z-depth-3 {
+	z-index: 100;
+}
+
+#scene {
+	z-index: 99;
+}
+
+nav ul {
+	text-align: center;
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+	width: 15%;
+}
+
+nav li a:link, nav li a:visited {
+	display: block;
+	text-decoration: none;
+	padding: 1rem 0 1rem 0;
+}
+
+main {
+	padding: 5rem 10rem;
+	text-align: center;
+}
+
+.light_theme {
+       -moz-box-shadow: inset 0 0 0 1px #e6e6e6;
+    -webkit-box-shadow: inset 0 0 0 1px #e6e6e6;
+            box-shadow: inset 0 0 0 1px #e6e6e6;
+
+	background: #eee;
+    background:     -webkit-gradient(linear, 0 0, 0 bottom, from(#eee), to(#B5B5B5));
+    background: -moz-linear-gradient(#eee, #B5B5B5);/**#d1d1d1**/
+    background:      linear-gradient(#eee, #B5B5B5);
+	
+    color: #555;
+    text-shadow: 0 1px 0 #fafafa;
+}
+
+nav.light_theme ul {
+	border-top: 1px solid rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+nav.light_theme li {
+	border-left: solid 1px #B0B0B0;
+	transition: 0.3s ease-in-out;
+}
+
+nav.light_theme li a:link, nav li a:visited {
+	border-left: solid 1px #F2F2F2;
+    text-shadow: 0 1px 0 #fafafa;
+    color: #555;
+}
+
+nav.light_theme li:hover {
+	background: #ababab;
+    -webkit-box-shadow: inset 2px 2px 4px rgba(0,0,0,0.14), inset 2px 2px 4px rgba(0,0,0,0.12), inset 2px 2px 4px rgba(0,0,0,0.3);
+	   -moz-box-shadow: inset 2px 2px 4px rgba(0,0,0,0.14), inset 2px 2px 4px rgba(0,0,0,0.12), inset 2px 2px 4px rgba(0,0,0,0.3);
+	        box-shadow: inset 2px 2px 4px rgba(0,0,0,0.14), inset 2px 2px 4px rgba(0,0,0,0.12), inset 2px 2px 4px rgba(0,0,0,0.3);
+	
+	transition: 0.3s ease-in-out;
+}
+
+nav.light_theme li.first {
+	border-left: solid 1px #B0B0B0;
+}
+
+nav.light_theme li.last {
+	border-right: solid 1px #F2F2F2;
+}
+
+nav.light_theme li.last a:link, nav.light_theme li a:visited {
+	border-right: solid 1px #B0B0B0;
+}
+
+.dark_theme {
+}
+
+@media (min-width: 769px) {
+	#scene {
+		height: 15rem;
+	}
+}
+
+@media (max-width: 768px) {
+	#scene {
+		height: 10rem;
+	}
+	
+	nav ul {
+		text-align: left;
+	}
+	
+	nav li {
+		text-align: center;
+		width: 17%;
+	}
+	
+	nav li a:link, nav li a:visited {
+		padding: 0.5rem 0 0.5rem 0;
+	}
+}
+
+@media (max-width: 450px) {
+	nav {
+		font-size: 0.7rem;
+	}
+}

@@ -1,0 +1,21 @@
+Portfolio process thoughts:
+
+-- initially began planning the mobile layout with a sidemenu, but upon researching more about best practices, found that it
+cuts user engagement down in a very "out of sight, out of mind" way.
+
+However, I still like how it leaves real estate for the rest of the screen, so I'll work on other layouts that keep the
+sidemenu but with a visual clue?
+
+-- horizontal nav
+
+
+-------------------------
+
+Plans:
+
+-- going to make input boxes oval and white, with no borde but material-design-esque diffuse shadows
+
+
+-------------------------
+
+Credits:
