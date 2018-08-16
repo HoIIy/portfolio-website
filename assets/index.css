@@ -7,6 +7,7 @@ body {
 	line-height: 1.5;
 	font-size: 100%;
     text-decoration: none;
+	min-width: 320px;
 }
 
 #logo_bar {
@@ -48,13 +49,34 @@ header > .z-depth-3 {
 	z-index: 100;
 }
 
+#logo {
+	font-size: 8em;
+	color: #fff;
+	text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+	position: absolute;
+	top: 0.25em;
+	left: 0.5em;
+}
+
 #scene {
 	z-index: 99;
+	position: relative;
+}
+
+.diag_tex {
+	background-image: url("../assets/stripe_texture.png");
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	position: relative;
 }
 
 nav ul {
 	text-align: center;
 	margin: 0;
+	padding: 0;
 }
 
 nav li {
@@ -65,12 +87,30 @@ nav li {
 nav li a:link, nav li a:visited {
 	display: block;
 	text-decoration: none;
+	text-transform: uppercase;
 	padding: 1rem 0 1rem 0;
 }
 
 main {
 	padding: 5rem 10rem;
 	text-align: center;
+	background-image: url("../assets/stripes-light.png"), url("../assets/stripe_texture.png");
+	background-position: center, left top;
+    background-repeat: repeat, repeat;
+	background-color: rgba(255, 255, 255, 0.25);
+    background-blend-mode: lighten;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
 }
 
 .light_theme {
@@ -99,17 +139,18 @@ nav.light_theme li {
 
 nav.light_theme li a:link, nav li a:visited {
 	border-left: solid 1px #F2F2F2;
-    text-shadow: 0 1px 0 #fafafa;
-    color: #555;
+    color: #888;
 }
 
-nav.light_theme li:hover {
+nav.light_theme li:hover, nav.light_theme li:hover a {
 	background: #ababab;
     -webkit-box-shadow: inset 2px 2px 4px rgba(0,0,0,0.14), inset 2px 2px 4px rgba(0,0,0,0.12), inset 2px 2px 4px rgba(0,0,0,0.3);
 	   -moz-box-shadow: inset 2px 2px 4px rgba(0,0,0,0.14), inset 2px 2px 4px rgba(0,0,0,0.12), inset 2px 2px 4px rgba(0,0,0,0.3);
 	        box-shadow: inset 2px 2px 4px rgba(0,0,0,0.14), inset 2px 2px 4px rgba(0,0,0,0.12), inset 2px 2px 4px rgba(0,0,0,0.3);
 	
-	transition: 0.3s ease-in-out;
+	text-shadow: 0 1px 0 #dadada;
+	transition: 0.5s ease-in-out;
+    color: #555;
 }
 
 nav.light_theme li.first {
@@ -131,6 +172,15 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 	#scene {
 		height: 15rem;
 	}
+	
+	nav li a:link, nav li a:visited {
+		padding: 0.5rem 0 0.5rem 0;
+	}
+	
+	nav.light_theme li a:link, nav li a:visited {
+		font-weight: 800;
+		font-family: 'Roboto', sans-serif;
+	}
 }
 
 @media (max-width: 768px) {
@@ -139,7 +189,7 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 	}
 	
 	nav ul {
-		text-align: left;
+		text-align: right;
 	}
 	
 	nav li {
@@ -149,11 +199,52 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 	
 	nav li a:link, nav li a:visited {
 		padding: 0.5rem 0 0.5rem 0;
+		font-size: 0.8rem;
 	}
 }
 
 @media (max-width: 450px) {
-	nav {
-		font-size: 0.7rem;
+	nav li a:link, nav li a:visited {
+		font-size: 0.6rem;
+		letter-spacing: 0.05rem;
+	}
+	
+	nav.light_theme li a:link, nav li a:visited {
+		color: #efefef;
+		text-shadow: 0 0 4px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,1);
+	}
+}
+
+@media (max-width: 350px) {
+	nav li a:link, nav li a:visited {
+		font-size: 0.5rem;
+		letter-spacing: 0.05rem;
+	}
+			
+	nav.light_theme li a:link, nav li a:visited {
+		text-transform: lowercase;
+		text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+		color: #555;
+	}
+	
+	#logo {
+		top: 0.15em;
+		left: 0.2em;
+	}
+	
+	#logo_bar {
+		padding: 1rem 1.5rem;
+	}
+}
+
+@media (min-width: 980px and max-width: 1250px) {
+	nav li a:link, nav li a:visited {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 1250px) {
+	nav li a:link, nav li a:visited {
+		font-size: 2rem;
 	}
 }
