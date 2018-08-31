@@ -44,7 +44,6 @@
 		><li><a id="nav_blog" href="#">DevBlog</a></li
 		><li class="last"><a id="nav_cont" href="#">Contact</a></li></ul>
 	</nav>
-  
   </header>
   
   <main>
@@ -61,7 +60,7 @@
 	<span class="footer_line"><a id="priv_policy" href="#">Privacy Policy</a></span>
   </footer>
   
-  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

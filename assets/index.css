@@ -18,6 +18,11 @@
 html, body {
 	padding: 0;
 	margin: 0;
+	background-image: url("../assets/stripes-light.png"), url("../assets/stripe_texture.png");
+	background-position: center, left top;
+    background-repeat: repeat, repeat;
+	background-color: rgba(255, 255, 255, 0.25);
+    background-blend-mode: lighten;
 }
 
 body {
@@ -70,7 +75,7 @@ body {
 	float: left;
 }
 
-#logo:after {
+#logo:after, #soc_med:after {
 	clear: both;
 }
 
@@ -154,18 +159,8 @@ nav li a:link, nav li a:visited {
 }
 
 main {
-	padding: 5rem 10rem;
+	padding: 2rem 10rem;
 	text-align: center;
-	background-image: url("../assets/stripes-light.png"), url("../assets/stripe_texture.png");
-	background-position: center, left top;
-    background-repeat: repeat, repeat;
-	background-color: rgba(255, 255, 255, 0.25);
-    background-blend-mode: lighten;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
 }
 
 footer {
