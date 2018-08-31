@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="cleartype" content="on">
-    <meta name="MobileOptimized" content="320">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width">
 	
@@ -17,6 +15,10 @@
 	</head>
   <body>
   
+  <div id="loading">
+	<img id="loading_img" src="assets/grey_loading.svg" alt="Loading page..." />
+  </div>
+  
   <header>
     <div class="z-depth-3">  
 		<div id="logo_bar" class="light_theme">
@@ -25,7 +27,7 @@
 		</div>
 		<div id="soc_med">
 			<img src="assets/sm_icons/mail.png"></img>
-			<img src="assets/sm_icons/twitter.png"></img>
+			<a href="https://twitter.com/hoIIyhax" target="_blank"><img src="assets/sm_icons/twitter.png"></img></a>
 			<img src="assets/sm_icons/facebook.png"></img>
 			<img src="assets/sm_icons/linkedin.png"></img>
 		</div>
@@ -58,5 +60,7 @@
 	[footerline]
   </footer>
   
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

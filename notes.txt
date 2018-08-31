@@ -27,5 +27,7 @@ To add in the portfolio section:
 
 Credits:
 
-http://ianlunn.github.io/Hover/      - logo hover effect
-http://www.socicon.com/generator.php - social media icons
+http://ianlunn.github.io/Hover/                                  - logo hover effect
+http://www.socicon.com/generator.php                             - social media icons
+https://fonts.google.com/specimen/Roboto?selection.family=Roboto - Google's Roboto font
+
