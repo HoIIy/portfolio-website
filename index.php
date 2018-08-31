@@ -38,11 +38,11 @@
 	</div>
 	
     <nav class="light_theme z-depth-3">
-	  <ul><li class="first"><a href="#">Me</a></li
-		><li><a href="#">Portfolio</a></li
-		><li><a href="#">Resume</a></li
-		><li><a href="#">DevBlog</a></li
-		><li class="last"><a href="#">Contact</a></li></ul>
+	  <ul><li class="first"><a id="navMe" href="#">Me</a></li
+		><li><a id="navPort" href="#">Portfolio</a></li
+		><li><a id="navRes"  href="#">Resume</a></li
+		><li><a id="navBlog" href="#">DevBlog</a></li
+		><li class="last"><a id="navCont" href="#">Contact</a></li></ul>
 	</nav>
   
   </header>
