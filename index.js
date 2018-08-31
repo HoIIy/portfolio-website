@@ -6,27 +6,27 @@ $(window).on('load', function(){
 });
 
 $(document).ready(function(){
-	var navMe = document.getElementById("navMe");
+	var navMe = document.getElementById("nav_me");
 	navMe.onclick = function(){
 		console.log("me");
 	}
 	
-	var navPort = document.getElementById("navPort");
+	var navPort = document.getElementById("nav_port");
 	navPort.onclick = function(){
 		console.log("port");
 	}
 	
-	var navRes = document.getElementById("navRes");
+	var navRes = document.getElementById("nav_res");
 	navRes.onclick = function(){
 		console.log("res");
 	}
 	
-	var navBlog = document.getElementById("navBlog");
+	var navBlog = document.getElementById("nav_blog");
 	navBlog.onclick = function(){
 		console.log("navBlog");
 	}
 	
-	var navCont = document.getElementById("navCont");
+	var navCont = document.getElementById("nav_cont");
 	navCont.onclick = function(){
 		console.log("navCont");
 	}

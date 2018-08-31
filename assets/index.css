@@ -1,3 +1,20 @@
+@font-face {
+	font-family: "global";
+	font-style: normal;
+	font-weight: 300;
+	src: local(-apple-system),
+	local(BlinkMacSystemFont),
+	local('.SFNSText-Regular'),
+	local("Segoe UI"),
+	local(Roboto),
+	local("Helvetica Neue"),
+	local("Arial"), 
+	local("sans-serif"),
+	local("Apple Color Emoji"),
+	local("Segoe UI Emoji"),
+	local("Segoe UI Symbol");
+}
+	
 html, body {
 	padding: 0;
 	margin: 0;
@@ -8,6 +25,8 @@ body {
 	font-size: 100%;
     text-decoration: none;
 	min-width: 320px;
+    line-height: 1.5;
+	font-family: "global";
 }
 
 #loading {
@@ -154,6 +173,17 @@ footer {
 	bottom: 0;
 	right: 0;
 	left: 0;
+    padding: 0 0 1em 0;
+	text-align: center;
+	background-color: #333;
+}
+
+footer a {
+	color: #4F4F4F;
+	text-decoration: none;
+}
+
+.footer_line {
 }
 
 .light_theme {
@@ -221,8 +251,8 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 	}
 	
 	nav.light_theme li a:link, nav li a:visited {
+		font-family: "Roboto", "global";
 		font-weight: 800;
-		font-family: 'Roboto', sans-serif;
 	}
 	
 	#soc_med {

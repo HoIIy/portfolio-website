@@ -38,11 +38,11 @@
 	</div>
 	
     <nav class="light_theme z-depth-3">
-	  <ul><li class="first"><a id="navMe" href="#">Me</a></li
-		><li><a id="navPort" href="#">Portfolio</a></li
-		><li><a id="navRes"  href="#">Resume</a></li
-		><li><a id="navBlog" href="#">DevBlog</a></li
-		><li class="last"><a id="navCont" href="#">Contact</a></li></ul>
+	  <ul><li class="first"><a id="nav_me" href="#">Me</a></li
+		><li><a id="nav_port" href="#">Portfolio</a></li
+		><li><a id="nav_res"  href="#">Resume</a></li
+		><li><a id="nav_blog" href="#">DevBlog</a></li
+		><li class="last"><a id="nav_cont" href="#">Contact</a></li></ul>
 	</nav>
   
   </header>
@@ -54,10 +54,11 @@
   
   <footer>
     <!-- credits -->
-	[credits]
+	<h2>credits</h2>
 	
 	<!-- copyright/privacy policy -->
-	[footerline]
+	<span class="footer_line">&copy; Holly Bonaventura 2018</span>  &bull;
+	<span class="footer_line"><a id="priv_policy" href="#">Privacy Policy</a></span>
   </footer>
   
   <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
