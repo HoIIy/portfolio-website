@@ -8,6 +8,14 @@ sidemenu but with a visual clue?
 
 -- horizontal nav
 
+-- originally reused a template system from a more dynamic project
+-- that took nav clicks, found the page template, created it, set variables, etc
+-- but that wasn't right for this project; content is largely static even if animated visually
+-- and it relied on javascript to load content, via the AJAX call, which I didn't want
+-- so it's a one-page system now instead.
+
+-- likewise, some nav items were actually links instead of site pages (portfolio, resume, blog)
+-- so now portfolio and resume have download buttons separate from the nav, instead.
 
 -------------------------
 
@@ -22,6 +30,9 @@ To add in the portfolio section:
 			<img src="assets/sm_icons/deviantart.png"></img>
 			<img src="assets/sm_icons/slack.png"></img>
 			<img src="assets/sm_icons/trello.png"></img>
+			stack overflow
+			
+-- need to add "download" glyph to port/res buttons
 
 -------------------------
 
@@ -30,4 +41,6 @@ Credits:
 http://ianlunn.github.io/Hover/                                  - logo hover effect
 http://www.socicon.com/generator.php                             - social media icons
 https://fonts.google.com/specimen/Roboto?selection.family=Roboto - Google's Roboto font
+https://loading.io/                                              - svg loading image
 
+jquery

@@ -57,7 +57,7 @@ body {
 }
 
 #logo_bar {
-	padding: 1.5rem 3rem;
+	padding: 1.25rem 3rem;
     font: bold 12px Arial, Helvetica, Clean, sans-serif;
 	text-align: right;
 	
@@ -79,9 +79,46 @@ body {
 	clear: both;
 }
 
-#bar_buttons {
+#logo_bar > * {
 	display: inline-block;
-	word-spacing: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: .55rem .7rem .55rem .7rem;
+	margin-left: 0.25rem;
+    transition: ease-in-out 1s;
+	cursor: pointer;
+	
+	background: #e0e0e0;
+    background-image: -webkit-linear-gradient(top, #e0e0e0, #4E7B94);
+       background-image: -moz-linear-gradient(top, #e0e0e0, #4E7B94);
+        background-image: -ms-linear-gradient(top, #e0e0e0, #4E7B94);
+         background-image: -o-linear-gradient(top, #e0e0e0, #4E7B94);
+            background-image: linear-gradient(to bottom, #e0e0e0, #4E7B94);
+	
+    -webkit-border-radius: 28;
+       -moz-border-radius: 28;
+            border-radius: 28px;
+			
+    text-shadow: 1px 1px 3px #666666;
+	
+    -webkit-box-shadow: 0px 1px 3px #333333;
+       -moz-box-shadow: 0px 1px 3px #333333;
+            box-shadow: 0px 1px 3px #333333;
+			
+    color: #ffffff;
+    border: solid #fff 1px;
+    font-weight: 400;
+	font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+	background: #adcde5; /*7ab9cc;*/
+	text-shadow: 0px 0px 5px rgba(255,255,255,1), 0px 0px 5px rgba(255,255,255,0.5), 0px 0px 15px rgba(255,255,255,1);
+	transition: ease-in-out 0.5s;
 }
 
 .color_gradient {
@@ -148,7 +185,7 @@ nav ul {
 
 nav li {
 	display: inline-block;
-	width: 15%;
+	width: 20%;
 }
 
 nav li a:link, nav li a:visited {
@@ -159,7 +196,7 @@ nav li a:link, nav li a:visited {
 }
 
 main {
-	padding: 2rem 10rem;
+	padding: 1rem;
 	text-align: center;
 }
 
@@ -253,6 +290,7 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 	
 	nav li a:link, nav li a:visited {
 		padding: 0.5rem 0 0.5rem 0;
+		font-size: 1.25rem;
 	}
 	
 	nav.light_theme li a:link, nav li a:visited {
@@ -268,6 +306,10 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 		height: 55px;
 		width: auto;
 	}
+	
+	#port_res {
+		margin-right: 5rem;
+	}
 }
 
 @media (max-width: 768px) {
@@ -280,13 +322,19 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 	}
 	
 	nav li {
+		width: 20%;
 		text-align: center;
-		width: 17%;
 	}
 	
 	nav li a:link, nav li a:visited {
 		padding: 0.5rem 0 0.5rem 0;
-		font-size: 0.8rem;
+		font-size: 1rem;
+	}
+	
+	nav.light_theme li a:link, nav li a:visited {
+		font-family: "Roboto", "global";
+		font-size: 0.7rem;
+		color: #555;
 	}
 	
 	#soc_med {
@@ -297,6 +345,14 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 		height: 35px;
 		width: auto;
 	}
+	
+	#port_res {
+		margin-right: 2rem;
+	}
+	
+	.btn {
+		font-size: 0.8rem;
+	}
 }
 
 @media (max-width: 450px) {
@@ -306,8 +362,22 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 	}
 	
 	nav.light_theme li a:link, nav li a:visited {
-		color: #efefef;
-		text-shadow: 0 0 4px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,1);
+		text-transform: lowercase;
+		/*color: #efefef;
+		text-shadow: 0 0 4px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,1);*/
+	}
+	
+	#logo {
+		top: 0.15em;
+		left: 0.2em;
+	}
+	
+	#logo_bar {
+		padding: 1rem 1.5rem;
+	}
+	
+	#port_res {
+		margin-right: 1rem;
 	}
 }
 
@@ -318,18 +388,8 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 	}
 			
 	nav.light_theme li a:link, nav li a:visited {
-		text-transform: lowercase;
-		text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
-		color: #555;
-	}
-	
-	#logo {
-		top: 0.15em;
-		left: 0.2em;
-	}
-	
-	#logo_bar {
-		padding: 1rem 1.5rem;
+		/*text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+		color: #555;*/
 	}
 }
 
@@ -348,5 +408,29 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 		font-size: 10em;
 		top: 0.05em;
 		text-shadow: 0px 0px 10px rgba(0,0,0,0.1), 0px 0px 5px rgba(0,0,0,0.4);
+	}
+}
+
+/** 
+  The portfolio/resume buttons are on the logo bar whenever possible
+  but on really tiny mobile screens, they're at the top of content.
+**/
+@media (max-width: 405px) {
+	#port_res {
+		display: none;
+	}
+	
+	#mobile_port_res {
+		display: block;
+	}
+}
+
+@media (min-width: 406px) {
+	#port_res {
+		display: inline-block;
+	}
+	
+	#mobile_port_res {
+		display: none;
 	}
 }

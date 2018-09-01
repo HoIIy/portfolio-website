@@ -23,7 +23,11 @@
     <div class="z-depth-3">  
 		<div id="logo_bar" class="light_theme">
 			<div id="logo" class="hvr-float-shadow"><a href="/p6">HB</a></div>
-			<div id="bar_buttons">[sun] [moon] [rainbow]</div>
+			<div id="port_res">
+				<div class="btn">Portfolio</div>
+				<div class="btn">Resume</div>
+			</div>
+			<div id="bar_buttons">[s] [m] [r]</div>
 		</div>
 		<div id="soc_med">
 			<img src="assets/sm_icons/mail.png"></img>
@@ -46,6 +50,11 @@
   </header>
   
   <main>
+	<div id="mobile_port_res">
+		<div class="btn">Portfolio</div>
+		<div class="btn">Resume</div>
+	</div>
+	
 	<div id="me" class="page">ME</div>
 	<div id="services" class="page">SRV</div>
 	<div id="links" class="page">LINKS</div>
