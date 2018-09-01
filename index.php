@@ -39,16 +39,17 @@
 	
     <nav class="light_theme z-depth-3">
 	  <ul><li class="first"><a href="#">Me</a></li
-		><li><a href="#">Portfolio</a></li
-		><li><a href="#">Resume</a></li
-		><li><a href="#">DevBlog</a></li
+		><li><a href="#">Services</a></li
+		><li><a href="#">Links</a></li
 		><li class="last"><a href="#">Contact</a></li></ul>
 	</nav>
   </header>
   
   <main>
-    <!-- content -->
-	[content]
+	<div id="me" class="page">ME</div>
+	<div id="services" class="page">SRV</div>
+	<div id="links" class="page">LINKS</div>
+	<div id="contact" class="page">Contact</div>
   </main>
   
   <footer>

@@ -163,6 +163,10 @@ main {
 	text-align: center;
 }
 
+.page {
+	display: none;
+}
+
 footer {
 	position: absolute;
 	bottom: 0;
@@ -171,12 +175,17 @@ footer {
     padding: 1rem 0 1rem 0;
 	text-align: center;
 	background-color: #333;
+	color: #555;
 	font-size: 0.75rem;
 }
 
 footer a {
-	color: #4F4F4F;
 	text-decoration: none;
+	color: #666;
+}
+
+footer a:hover {
+	color: #808080;
 }
 
 .footer_line {
