@@ -31,7 +31,7 @@ function ajaxData(destination, params, reqMethod, doneFunct){
 function getPage(pgName){
 	var ajaxController = "func.php";
 	ajaxData(ajaxController, {"pgName":pgName}, "POST", function(data){
-		$("main").html("Hello <b>world</b>!");
+		$("main").html(data).hide().fadeIn(750);
 	});
 }
 
