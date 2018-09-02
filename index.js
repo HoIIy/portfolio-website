@@ -44,10 +44,18 @@ $(document).ready(function(){
 	$.each(navLinks, function(){
 		this.onclick = function(){
 			// hide previous pg's content
-			$(".page:visible").hide();
+			$(".hidden:visible").hide();
 			
 			// show this nav pg's content
 			$("#"+$(this).text().toLowerCase()).fadeIn(750);
 		}
 	});
+	
+	/*$( "#f_links > a" ).on("click", function(){
+		//$( "#f_links" ).animate({opacity: 0});
+		$( "#f_content" ).slideToggle('slow', function(){
+			$('#f_content').css('overflow','hidden');
+		});
+	});*/
+	
 });

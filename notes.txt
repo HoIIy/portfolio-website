@@ -42,5 +42,8 @@ http://ianlunn.github.io/Hover/                                  - logo hover ef
 http://www.socicon.com/generator.php                             - social media icons
 https://fonts.google.com/specimen/Roboto?selection.family=Roboto - Google's Roboto font
 https://loading.io/                                              - svg loading image
+http://www.shapes4free.com/photoshop-custom-shapes/photoshop-sun-shapes/ - sun lineart
+https://www.calligraphr.com
 
+jquery ui
 jquery
