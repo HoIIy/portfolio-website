@@ -44,11 +44,15 @@ $(document).ready(function(){
 	$.each(navLinks, function(){
 		this.onclick = function(){
 			// hide previous pg's content
-			$(".hidden:visible").hide();
+			$(".page:visible").hide();
 			
 			// show this nav pg's content
 			$("#"+$(this).text().toLowerCase()).fadeIn(750);
 		}
+	});
+	
+	$( "#js_footer" ).slideDown(1200, 'easeOutBounce', function(){
+		$(this).css({"display":"flex"});
 	});
 	
 	/*$( "#f_links > a" ).on("click", function(){
