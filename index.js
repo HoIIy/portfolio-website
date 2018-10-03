@@ -47,23 +47,45 @@ function ajaxData(destination, params, reqMethod, doneFunct){
 });*/
 
 $(document).ready(function(){
-	$(".footer:nth-of-type(2)").hide();
-	if ($("#js_footer").visible() == true && !$(".footer:nth-of-type(2)").is(":visible")) {
-		$(".footer:nth-of-type(2)").slideToggle(1200, 'easeOutBounce', function(){
+	$(".footer:nth-of-type(2)").hide().slideToggle(1200, 'easeOutBounce', function(){
             $(".footer").first().css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0});
-            //$("#footerText").css('display', 'none').fadeIn(400);
         });
-    } 
+	//if ($("#js_footer").visible() == true && !$(".footer:nth-of-type(2)").is(":visible")) {
+    //} 
 	var navLinks = $("nav > ul > li > a");
 	$.each(navLinks, function(){
 		this.onclick = function(){
 			// hide previous pg's content
 			$(".page:visible").hide();
-			
+            
 			// show this nav pg's content
 			$("#"+$(this).text().toLowerCase()).fadeIn(750);
 		}
 	});
+    
+    $("#privLink").on("click", function(){
+        $(".page:visible").hide(function(){
+            $("#privPol").fadeIn(750);
+        });
+    });
+    
+    $("#imgCredLink").on("click", function(){
+        $(".page:visible").hide(function(){
+            $("#imgCredits").fadeIn(750);
+        });
+    });
+    
+    $("#codeCredLink").on("click", function(){
+        $(".page:visible").hide(function(){
+            $("#codeCredits").fadeIn(750);
+        });
+    });
+    
+    $("#otherCredLink").on("click", function(){
+        $(".page:visible").hide(function(){
+            $("#otherCredits").fadeIn(750);
+        });
+    });
 	
 	/*$( "#f_links > a" ).on("click", function(){
 		//$( "#f_links" ).animate({opacity: 0});

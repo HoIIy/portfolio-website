@@ -147,13 +147,13 @@ body {
 	transition: ease-in-out 0.5s;
 }
 
-#bar_buttons {
+#theme_changer {
 	word-spacing: 0.25rem;
 	font-family: "Portfolio LD Glyphs";
 	font-size: 3rem;
 }
 
-#bar_buttons > * {
+#theme_changer > * {
 	color: #ff0000 !important;
 }
 
@@ -453,7 +453,7 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 
 @media (min-width: 769px) {
 	#scene {
-		height: 15rem;
+		height: 12rem;
 	}
 	
 	nav li a:link, nav li a:visited {
@@ -471,7 +471,7 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 	}
 
 	#soc_med img {
-		height: 55px;
+		height: 60px;
 		width: auto;
 	}
 	
@@ -482,7 +482,7 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 
 @media (max-width: 768px) {
 	#scene {
-		height: 10rem;
+		height: 7rem;
 	}
 	
 	nav ul {
@@ -510,7 +510,7 @@ nav.light_theme li.last a:link, nav.light_theme li a:visited {
 	}
 
 	#soc_med img {
-		height: 35px;
+		height: 32px;
 		width: auto;
 	}
 	

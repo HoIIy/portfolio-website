@@ -44,6 +44,38 @@ https://fonts.google.com/specimen/Roboto?selection.family=Roboto - Google's Robo
 https://loading.io/                                              - svg loading image
 http://www.shapes4free.com/photoshop-custom-shapes/photoshop-sun-shapes/ - sun lineart
 https://www.calligraphr.com
+isVisible?
 
 jquery ui
 jquery
+
+background-color: #f0f0f0;
+background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+background-color: #858585;
+background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+background-color: #858585;
+background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+background-color: #858585;
+background-image: url(http://www.transparenttextures.com/patterns/skulls.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+background-color: #2b2b2b;
+background-image: url("https://www.transparenttextures.com/patterns/subtle-stripes.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+background-color: #919191;
+background-image: url("https://www.transparenttextures.com/patterns/scribble-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+
+dark skin:
+background-color: #2b2b2b;
+background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
